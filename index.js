@@ -50,11 +50,11 @@ async function addFilters(fileName) {
 	} catch (e) {
 		console.log('colorTemperatureAdjustment');
 	}
-	try {
-		src = sharpenAdjustment(src, params[3]); // [-0.5,0.5]
-	} catch (e) {
-		console.log('sharpenAdjustment');
-	}
+	// try {
+	// 	src = sharpenAdjustment(src, params[3]); // [-0.5,0.5]
+	// } catch (e) {
+	// 	console.log('sharpenAdjustment');
+	// }
 	try {
 		src = saturationAdjustment(src, params[4]); // [-100,100]
 	} catch (e) {
